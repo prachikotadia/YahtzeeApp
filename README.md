@@ -1,5 +1,5 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12055419&assignment_repo_type=AssignmentRepo)
-# CS 442 MP2: Yahtzee
+
+# Yahtzee
 
 ## Overview
 
@@ -18,9 +18,6 @@ The primary objective of this MP is to provide you with an opportunity to employ
 ## Specifications
 
 The version of Yahtzee you will implement is a slightly simplified, single-player version of the game. The player will be able to roll the dice up to three times per turn, choosing a scoring category to end each turn. The game ends when the player has entered a score in each of the 13 categories on the scorecard. Our version will not include the "Yahtzee bonus" rule, which awards additional points for multiple Yahtzees.
-
-To see an example of the app you will implement, see the [MP2 demo video](https://youtu.be/PyLQCjtTpc8?si=OqsugTDnzp-pfgUq). Note that you have the freedom to design and lay out your app in any way you wish, as long as it meets the requirements specified here.
-
 
 ## Implementation details / requirements
 
@@ -165,46 +162,6 @@ If you choose not to use them, you will need to implement your own model classes
 
 ### Code structure
 
-While the specific widget breakdown is up to you, we ask that you modularize your UI code so that it is easy to read and understand. At a minimum, you should define a separate widget (stateless or stateful, though you'll definitely need at least one stateful widget in the mix) for each of the following UI elements:
-
 - the main Yahtzee game container
 - the dice display
 - the scorecard display
-
-You may wish to create additional widgets to further modularize your code. As a rough guideline, if your `build` method is more than 50 lines long, you should  consider refactoring it into smaller, more manageable widgets. Each of your widgets should live in a separate file in the `lib/views` directory.
-
-Your implementation should not make use of any global variables or functions. All data should be encapsulated in your model classes, and you should use one of the state management techniques discussed in class (e.g., `ChangeNotifier`, `ListenableBuilder`, `provider`) to manage the state of your UI.
-
-
-## Testing
-
-We will be testing your application by building and running it as either a native macOS or Chrome app (which should behave the same). Your app should run without errors or warnings, and should behave as specified above. 
-
-
-## Grading
-
-This machine problem is worth 48 points. Your grade will be based on the following criteria:
-
-- 8 points: the dice rolling mechanism works correctly, including the ability to hold and unhold dice, and the ability to roll up to (but no more than) three times per turn
-
-- 8 points: the scorecard works correctly, including the ability to register a score for a given category just once
-
-- 4 points: scores are correctly calculated for all categories, and the total score is correctly updated
-
-- 4 points: the game correctly ends when all categories have been used, and the final score is correctly displayed
-
-- 4 points: the game state is correctly reset when the user dismisses the final score
-
-- 4 points: your code structure separates layout from data, involving the use of data model classes and avoiding hardcoding game logic/data into widget implementations
-
-- 8 points: your code is well-structured, easy to read, and does a good job modularizing the UI into separate widgets (at a minimum, as suggested in the "Code structure" section above)
-
-- 8 points: your implementation makes effective use of stateful widgets and state management techniques to manage the state of the UI
-
-If your code does not compile, you will receive a zero for the assignment. If your code compiles but does not meet the requirements, you will receive partial credit based on the extent to which it does.
-
-## Submission
-
-To submit your machine problem, commit and push your code to your private GitHub repository shared with us. You can make as many commits and pushes as needed; we will assess the most recent version of your code pushed before the deadline.
-
-If you plan to use late submission days, remember to notify the TAs via email both before the deadline and after your final submission.
